@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi futuro concejal 🤍</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #fff8ee;
+    background:
+        linear-gradient(rgba(25,15,12,.52), rgba(25,15,12,.60)),
+        url("fondo.jpg") center center / cover fixed no-repeat;
+}
+
+.pagina {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    padding: 55px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pagina.activa {
+    display: flex;
+}
+
+.detalle {
+    color: #f1d7bd;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(32px, 6vw, 55px);
+    font-weight: normal;
+    color: #fff2e2;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 12px #24150f;
+}
+
+.subtitulo {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.foto {
+    width: min(330px, 90%);
+    padding: 12px 12px 35px;
+    background: #f9f0e5;
+    transform: rotate(-2deg);
+    box-shadow: 0 12px 35px #0008;
+    margin: 20px auto;
+}
+
+.foto img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.dedicatoria {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.boton {
+    display: inline-block;
+    border: none;
+    background: #f3dfcc;
+    color: #50372c;
+    padding: 14px 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 5px 18px #0004;
+}
+
+.boton:hover {
+    background: #fff5e9;
+    transform: translateY(-3px);
+}
+
+.carta {
+    width: min(850px, 100%);
+    padding: 35px;
+    background: rgba(255,246,235,.95);
+    color: #594337;
+    border: 1px solid #e8cdb4;
+    border-radius: 8px;
+    box-shadow: 0 12px 35px #0005;
+    text-align: left;
+    line-height: 1.85;
+    font-size: 17px;
+}
+
+.carta p {
+    margin-bottom: 16px;
+}
+
+.firma {
+    text-align: center;
+    font-style: italic;
+    color: #805849;
+    margin-top: 25px;
+}
+
+.video-marco {
+    width: min(750px, 100%);
+    padding: 12px;
+    background: #fff3e7;
+    border: 1px solid #e8cdb4;
+    box-shadow: 0 12px 35px #0006;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+video {
+    width: 100%;
+    max-height: 430px;
+    display: block;
+    background: #211713;
+}
+
+.mensaje-final {
+    max-width: 650px;
+    padding: 25px;
+    line-height: 1.9;
+    font-size: 18px;
+    text-shadow: 0 2px 8px #21130e;
+}
+
+.mensaje-final h2 {
+    color: #f5d8bd;
+    font-weight: normal;
+    margin-top: 12px;
+}
+
+.mensaje-final p {
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px) {
+
+    .pagina {
+        padding: 40px 16px;
+    }
+
+    .carta {
+        padding: 23px 19px;
+        font-size: 16px;
+    }
+
+    .foto img {
+        height: 300px;
+    }
+
+    .mensaje-final {
+        font-size: 16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PÁGINA 1: PORTADA -->
+
+<section class="pagina activa" id="portada">
+
+    <p class="detalle">UN RECUERDO PARA TI 🤍</p>
+
+    <h1>Para mi futuro concejal</h1>
+
+    <p class="subtitulo">
+        Hay personas que hacen más bonito nuestro camino...
+    </p>
+
+    <div class="foto">
+        <img src="portada.jpg" alt="Nuestro recuerdo especial">
+    </div>
+
+    <p class="dedicatoria">
+        Quiero recordarte lo mucho que creo en ti. 🤍
+    </p>
+
+    <button class="boton" onclick="mostrar('carta')">
+        Leer mi carta ♡
+    </button>
+
+</section>
+
+
+<!-- PÁGINA 2: CARTA -->
+
+<section class="pagina" id="carta">
+
+    <p class="detalle">UNAS PALABRAS PARA TI 🤍</p>
+
+    <h1>Mi futuro concejal...</h1>
+
+    <article class="carta">
+
+        <p>Mi futuro concejal… 💞🥹</p>
+
+        <p>
+        Sé que últimamente no han sido días fáciles para ti.
+        Te he sentido cansado, estresado y con tantas cosas en la cabeza.
+        Y aunque a veces no sé exactamente qué decir para hacerte sentir mejor,
+        quería dejarte estas palabras para que puedas volver a ellas cada vez
+        que sientas que todo pesa demasiado. 🫂❤️
+        </p>
+
+        <p>
+        Quiero que sepas que yo veo tu esfuerzo. Veo los días en los que estás
+        cansado y aun así sigues intentando. Veo tus preocupaciones, tus ganas
+        de salir adelante y esa parte de ti que sigue luchando incluso cuando
+        las cosas se ponen difíciles. ✨🤍
+        </p>
+
+        <p>Y por eso te admiro. 💞</p>
+
+        <p>
+        Sé que tienes sueños grandes. Sé que quieres llegar lejos y convertirte
+        en esa persona que imaginas cuando piensas en tu futuro. Y yo, de verdad,
+        quiero verte lograrlo. Quiero verte cumplir cada meta, celebrar tus
+        logros y sonreír con orgullo por todo aquello por lo que luchaste. 🥹💕
+        </p>
+
+        <p>
+        Pero antes de llegar a todo eso, quiero pedirte algo:
+        no seas tan duro contigo mismo. 🫶🏻
+        </p>
+
+        <p>
+        Está bien cansarse. Está bien tener días malos. Está bien sentir que
+        necesitas parar un momento. Descansar no significa rendirse.
+        A veces necesitas respirar para poder continuar. 🌷🤍
+        </p>
+
+        <p>Solo no olvides quién eres. ❤️</p>
+
+        <p>
+        Porque cuando tú dudes de ti, quiero que recuerdes que existe alguien
+        que cree profundamente en ti. Yo creo en ti. Creo en tu corazón,
+        en tus capacidades, en tus sueños y en todo lo que todavía puedes
+        llegar a ser. 🥰💕
+        </p>
+
+        <p>
+        Mi futuro concejal, sé que a veces el camino se siente demasiado largo.
+        Pero tú puedes. No te rindas ahora. Sigue, aunque sea poco a poco.
+        Un día vas a mirar atrás y te vas a dar cuenta de que todos estos días
+        difíciles también formaron parte del camino que te llevó hasta donde
+        querías estar. 🥹✨
+        </p>
+
+        <p>
+        Y cuando ese día llegue, quiero que sonrías y te sientas orgulloso
+        de ti. ❤️
+        </p>
+
+        <p>Porque yo ya estoy orgullosa de ti. 🫶🏻</p>
+
+        <p>
+        Estoy orgullosa de la persona que eres, de lo que has luchado
+        y de todo lo que todavía sueñas. 🤍
+        </p>
+
+        <p>
+        Así que sigue adelante, mi futuro concejal. Cumple tus sueños.
+        Cree en ti, incluso en los días en los que sea difícil hacerlo. 🌟💕
+        </p>
+
+        <p>Yo creo en ti. ❤️</p>
+
+        <p>
+        Y aunque no siempre encuentre las palabras perfectas,
+        quiero que nunca dudes de esto:
+        </p>
+
+        <p class="firma">
+        Te amo amor y siempre voy a querer verte feliz,
+        cumpliendo tus sueños y convirtiéndote en todo
+        aquello que deseas ser.💞
+
+        <br><br>
+
+        Con todo mi amor... 💌
+        </p>
+
+    </article>
+
+    <button class="boton" onclick="mostrar('video')">
+        Ver mi sorpresa ♡
+    </button>
+
+    <button class="boton" onclick="mostrar('portada')">
+        ← Volver a la portada
+    </button>
+
+</section>
+
+
+<!-- PÁGINA 3: VIDEO Y MENSAJE FINAL -->
+
+<section class="pagina" id="video">
+
+    <p class="detalle">UN ÚLTIMO RECUERDO 🤍</p>
+
+    <h1>Esto también es para ti</h1>
+
+    <div class="video-marco">
+
+        <video controls playsinline preload="metadata">
+
+            <source src="video.mp4" type="video/mp4">
+
+            Tu navegador no puede reproducir este video.
+
+        </video>
+
+    </div>
+
+    <div class="mensaje-final">
+
+        <p>Mi futuro concejal, no te rindas. 🤍</p>
+
+        <p>Cree en ti, como yo también creo en ti. ❤️</p>
+
+        <p>
+        Descansa cuando lo necesites, vuelve a intentarlo
+        y sigue caminando hacia eso que tanto sueñas. 🫂
+        </p>
+
+        <h2>Cumple tus sueños. ✨</h2>
+
+        <h2>Estoy orgullosa de ti. 🥹</h2>
+
+        <p>Te amo amor. Vamos mi Samu tu puedes 💞</p>
+
+    </div>
+
+    <button class="boton" onclick="mostrar('carta')">
+        ← Volver a la carta
+    </button>
+
+    <button class="boton" onclick="mostrar('portada')">
+        Volver al inicio ♡
+    </button>
+
+</section>
+
+
+<!-- FUNCIONES DE NAVEGACIÓN -->
+
+<script>
+
+function mostrar(id) {
+
+    document.querySelectorAll('.pagina').forEach(function(pagina) {
+
+        pagina.classList.remove('activa');
+
+    });
+
+    document.getElementById(id).classList.add('activa');
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: 'smooth'
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
+
